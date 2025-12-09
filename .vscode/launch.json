@@ -1,0 +1,53 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch in Firefox (localhost:9000)",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost:9000/",
+            "webRoot": "${workspaceFolder}/src",
+            "pathMappings": [
+                {
+                    "url": "http://localhost:9000/@fs/C:",
+                    "path": "c:"
+                }
+            ]
+        },
+        {
+            "name": "Run Test Runner",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/tsx",
+            "program": "${workspaceFolder}/src-test/test-runner.ts",
+            "outFiles": ["${workspaceFolder}/**/*.js"],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "integratedTerminal",
+            "skipFiles": ["<node_internals>/**"],
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/tsx.cmd"
+            }
+        },
+        {
+            "name": "Run Debug Operations",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/tsx",
+            "program": "${workspaceFolder}/src-test/run-debug.ts",
+            "outFiles": ["${workspaceFolder}/**/*.js"],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "integratedTerminal",
+            "skipFiles": ["<node_internals>/**"],
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/tsx.cmd"
+            }
+        }
+    ]
+}

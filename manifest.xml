@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+  xsi:type="TaskPaneApp">
+    <Id>CC923F2C-0638-4F36-9E18-A4910CD71B74</Id>
+    <Version>0.1.0.0</Version>
+    <ProviderName>macrogreg</ProviderName>
+    <DefaultLocale>en-US</DefaultLocale>
+    <DefaultSettings>
+      <SourceLocation DefaultValue="http://localhost:9000/index.html"/>
+      <RequestedWidth>500</RequestedWidth>
+    </DefaultSettings>
+    <DisplayName DefaultValue="ExpLens Excel-AddIn"/>
+    <Description DefaultValue="Advanced analysis of personal finances (multiple dimensions). Automatically import up to 2 years of bank transactions (via the Lunch Money app)."/>
+    <FormSettings></FormSettings>
+    <Permissions>ReadWriteDocument</Permissions>
+
+    <IconUrl DefaultValue="http://localhost:9000/icons/favicon-32x32.png"/>
+    <HighResolutionIconUrl DefaultValue="http://localhost:9000/icons/favicon-64x64.png"/>
+    <SupportUrl DefaultValue="https://ToDo"/>
+    <AppDomains>
+        <AppDomain>https://lunchmoney.app</AppDomain>
+        <AppDomain>https://github.com</AppDomain>
+    </AppDomains>
+    <Hosts>
+        <Host Name="Workbook"/>
+    </Hosts>
+    
+    <VersionOverrides
+      xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+      xsi:type="VersionOverridesV1_0">
+        <Hosts>
+          <Host xsi:type="Workbook">
+            <DesktopFormFactor>
+                <GetStarted>
+                    <Title resid="GetStarted-Title"/>
+                    <Description resid="GetStarted-Description"/>
+                    <LearnMoreUrl resid="GetStarted-LearnMoreUrl"/>
+                </GetStarted>
+                <!--
+                <FunctionFile resid="Commands-Url"/>
+                -->
+                <ExtensionPoint xsi:type="PrimaryCommandSurface">
+                    <OfficeTab id="TabHome">
+                        <Group id="EL.TabGroup-Id">
+                            <Label resid="TabGroup-Label"/>
+                            <Icon>
+                                <bt:Image size="16" resid="Icon.16x16"/>
+                                <bt:Image size="32" resid="Icon.32x32"/>
+                                <bt:Image size="80" resid="Icon.80x80"/>
+                            </Icon>
+                            <Control xsi:type="Button" id="EL.ShowPaneButton-Id">
+                                <Label resid="ShowPaneButton-Label"/>
+                                <Supertip>
+                                   <Title resid="ShowPaneButton-Tip-Title"/>
+                                   <Description resid="ShowPaneButton-Tip-Description"/>
+                                </Supertip>
+                                <Icon>
+                                    <bt:Image size="16" resid="Icon.16x16"/>
+                                    <bt:Image size="32" resid="Icon.32x32"/>
+                                    <bt:Image size="80" resid="Icon.80x80"/>
+                                </Icon>
+                                <Action xsi:type="ShowTaskpane">
+                                    <TaskpaneId>EL.Taskpain-Id</TaskpaneId>
+                                    <Title resid="Taskpain-Title" />
+                                    <SourceLocation resid="Taskpane-Url"/>
+                                </Action>
+                            </Control>
+                        </Group>
+                    </OfficeTab>
+                </ExtensionPoint>
+            </DesktopFormFactor>
+          </Host>
+        </Hosts>
+        <Resources>
+            <bt:Images>
+                <bt:Image id="Icon.16x16" DefaultValue="http://localhost:9000/icons/favicon-16x16.png"/>
+                <bt:Image id="Icon.32x32" DefaultValue="http://localhost:9000/icons/favicon-32x32.png"/>
+                <bt:Image id="Icon.80x80" DefaultValue="http://localhost:9000/icons/favicon-80x80.png"/>
+            </bt:Images>
+            <bt:Urls>
+                <bt:Url id="GetStarted-LearnMoreUrl" DefaultValue="https://ToDo"/>                
+                <bt:Url id="Taskpane-Url" DefaultValue="http://localhost:9000/index.html"/>
+            </bt:Urls>
+            <bt:ShortStrings>
+                <bt:String id="GetStarted-Title" DefaultValue="Bank Transactions Sync"/>
+                <bt:String id="TabGroup-Label" DefaultValue="ExpLens"/>
+                <bt:String id="ShowPaneButton-Label" DefaultValue="Show Pane"/>
+                <bt:String id="ShowPaneButton-Tip-Title" DefaultValue="Show ExpLens Task Pane"/>
+                <bt:String id="Taskpain-Title" DefaultValue="ExpLens"/>
+            </bt:ShortStrings>
+            <bt:LongStrings>
+                <bt:String id="ShowPaneButton-Tip-Description" DefaultValue="Click to show the ExpLens task pane. Synchronize your Bank Transactions from there."/>
+                <bt:String id="GetStarted-Description" DefaultValue="Analyze your finances. Synchronize Bank Transactions with Lunch Money. To view: [HOME tab] > [ExpLens] > [Show Pane]."/>                
+            </bt:LongStrings>
+        </Resources>
+    </VersionOverrides>
+</OfficeApp>

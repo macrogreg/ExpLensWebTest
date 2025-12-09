@@ -1,0 +1,13 @@
+{
+    "editor.rulers": [115, 159],
+    "editor.tabSize": 4,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true
+}
