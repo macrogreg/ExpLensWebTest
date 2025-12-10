@@ -1,1 +1,10 @@
-* -text
+*.ts    text eol=crlf
+*.tsx   text eol=crlf
+*.js    text eol=crlf
+*.jsx   text eol=crlf
+*.vue   text eol=crlf
+*.html  text eol=crlf
+*.css   text eol=crlf
+*.scss  text eol=crlf
+*.json  text eol=crlf
+*.md    text eol=crlf
