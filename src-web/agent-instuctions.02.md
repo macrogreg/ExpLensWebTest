@@ -132,4 +132,3 @@ your spouse.
 
 Just like your location in space has _independent_ coordinates (e.g. `x` and `y`), the values assigned to these
 categories are also independent from one another. That is why, data analysts call them _dimensions_.
-

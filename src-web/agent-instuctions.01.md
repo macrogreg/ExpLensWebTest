@@ -55,4 +55,3 @@
 
 - Index page should feature modern graphics that capture the essence of ExpLens and its finance analysis focus.
 - Ensure cohesive styling across the index and placeholder pages.
-
