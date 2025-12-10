@@ -1,4 +1,4 @@
-name: Deploy
+name: Release
 
 on:
     workflow_run:
@@ -13,7 +13,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Print branch and commit
+            - name: Print branch and commit info
               env:
                   REF_NAME: ${{ github.ref_name }}
                   HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
@@ -28,6 +28,9 @@ jobs:
 
             - name: Checkout code
               uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  ref: ${{ github.event.workflow_run.head_sha }}
 
             - name: Print commit info from repo
               run: |
@@ -81,7 +84,13 @@ jobs:
                   cp -r dist/spa/* "docs/app/current/excel/"
 
             - name: Commit and push changes
+              env:
+                  PUSH_BRANCH: ${{ github.event.workflow_run.head_branch || github.ref_name }}
               run: |
+                  if [ -z "${PUSH_BRANCH}" ]; then
+                    echo "Cannot determine push target branch."
+                    exit 1
+                  fi
                   git config --global user.name 'github-actions[bot]'
                   git config --global user.email 'github-actions[bot]@users.noreply.github.com'
                   git add docs/app/
@@ -89,5 +98,6 @@ jobs:
                     echo "No changes to commit"
                   else
                     git commit -m "Deploy SPA files to GH pages (ver: ${{ steps.version.outputs.version }})"
-                    git push
+                    echo "Pushing to branch ${PUSH_BRANCH}"
+                    git push origin HEAD:"${PUSH_BRANCH}"
                   fi
