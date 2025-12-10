@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="syncGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Cloud -->
+    <path d="M 44 28 C 44 24 41 20 36 20 C 35 20 34 20 33 21 C 31 17 27 14 22 14 C 16 14 12 18 12 24 C 12 24 12 25 12 25 C 8 26 6 29 6 32 C 6 36 9 40 14 40 L 42 40 C 48 40 52 36 52 32 C 52 29 50 26 46 25 C 45 25 44 27 44 28 Z" fill="url(#syncGrad)"/>
+    
+    <!-- Spreadsheet document -->
+    <rect x="18" y="36" width="28" height="22" rx="2" fill="white" stroke="#8b5cf6" stroke-width="1.5"/>
+    <line x1="18" y1="42" x2="46" y2="42" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="18" y1="48" x2="46" y2="48" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="28" y1="36" x2="28" y2="58" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="37" y1="36" x2="37" y2="58" stroke="#e5e7eb" stroke-width="1"/>
+    
+    <!-- Sync arrows -->
+    <path d="M 32 32 L 32 38" stroke="#8b5cf6" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 30 36 L 32 38 L 34 36" stroke="#8b5cf6" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <path d="M 32 28 L 32 22" stroke="#8b5cf6" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 30 24 L 32 22 L 34 24" stroke="#8b5cf6" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

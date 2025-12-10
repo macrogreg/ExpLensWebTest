@@ -1,0 +1,107 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.5" />
+            <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.3" />
+        </linearGradient>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="500" height="350" fill="url(#bg2)" rx="12"/>
+    
+    <!-- ExpLens Excel Interface -->
+    <rect x="30" y="30" width="440" height="290" rx="8" fill="white" stroke="#2563eb" stroke-width="2"/>
+    
+    <!-- Excel-style header -->
+    <rect x="30" y="30" width="440" height="40" rx="8" fill="#2563eb"/>
+    <rect x="30" y="50" width="440" height="20" fill="#2563eb"/>
+    <text x="50" y="60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">ExpLens - Multidimensional Analysis</text>
+    
+    <!-- Dimension tabs -->
+    <rect x="50" y="85" width="80" height="24" rx="4" fill="#2563eb"/>
+    <text x="62" y="101" font-family="Arial, sans-serif" font-size="10" fill="white">Category</text>
+    
+    <rect x="135" y="85" width="75" height="24" rx="4" fill="#3b82f6"/>
+    <text x="148" y="101" font-family="Arial, sans-serif" font-size="10" fill="white">Purpose</text>
+    
+    <rect x="215" y="85" width="75" height="24" rx="4" fill="#60a5fa"/>
+    <text x="225" y="101" font-family="Arial, sans-serif" font-size="10" fill="white">Member</text>
+    
+    <rect x="295" y="85" width="80" height="24" rx="4" fill="#93c5fd"/>
+    <text x="303" y="101" font-family="Arial, sans-serif" font-size="10" fill="white">Tax Category</text>
+    
+    <rect x="380" y="85" width="75" height="24" rx="4" fill="#bfdbfe"/>
+    <text x="390" y="101" font-family="Arial, sans-serif" font-size="10" fill="white">Rewards</text>
+    
+    <!-- Spreadsheet grid with multiple dimensions -->
+    <rect x="50" y="120" width="400" height="180" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1" rx="4"/>
+    
+    <!-- Column headers -->
+    <rect x="50" y="120" width="400" height="20" fill="#eff6ff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="60" y="133" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#1e40af">Transaction</text>
+    <text x="155" y="133" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#1e40af">Category</text>
+    <text x="225" y="133" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#1e40af">Purpose</text>
+    <text x="295" y="133" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#1e40af">Member</text>
+    <text x="355" y="133" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#1e40af">Tax</text>
+    <text x="405" y="133" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#1e40af">Amount</text>
+    
+    <!-- Row 1 -->
+    <line x1="50" y1="140" x2="450" y2="140" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="60" y="153" font-family="Arial, sans-serif" font-size="9" fill="#374151">Shell Gas</text>
+    <text x="155" y="153" font-family="Arial, sans-serif" font-size="9" fill="#059669">Transport</text>
+    <text x="225" y="153" font-family="Arial, sans-serif" font-size="9" fill="#7c3aed">Commute</text>
+    <text x="295" y="153" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">Alice</text>
+    <text x="355" y="153" font-family="Arial, sans-serif" font-size="9" fill="#ea580c">Personal</text>
+    <text x="405" y="153" font-family="Arial, sans-serif" font-size="9" fill="#374151">$45.00</text>
+    
+    <!-- Row 2 -->
+    <line x1="50" y1="160" x2="450" y2="160" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="60" y="173" font-family="Arial, sans-serif" font-size="9" fill="#374151">Arco Gas</text>
+    <text x="155" y="173" font-family="Arial, sans-serif" font-size="9" fill="#059669">Transport</text>
+    <text x="225" y="173" font-family="Arial, sans-serif" font-size="9" fill="#7c3aed">Vacation</text>
+    <text x="295" y="173" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">Bob</text>
+    <text x="355" y="173" font-family="Arial, sans-serif" font-size="9" fill="#ea580c">Personal</text>
+    <text x="405" y="173" font-family="Arial, sans-serif" font-size="9" fill="#374151">$60.00</text>
+    
+    <!-- Row 3 -->
+    <line x1="50" y1="180" x2="450" y2="180" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="60" y="193" font-family="Arial, sans-serif" font-size="9" fill="#374151">Hotel XYZ</text>
+    <text x="155" y="193" font-family="Arial, sans-serif" font-size="9" fill="#059669">Lodging</text>
+    <text x="225" y="193" font-family="Arial, sans-serif" font-size="9" fill="#7c3aed">Business</text>
+    <text x="295" y="193" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">Alice</text>
+    <text x="355" y="193" font-family="Arial, sans-serif" font-size="9" fill="#ea580c">Deductible</text>
+    <text x="405" y="193" font-family="Arial, sans-serif" font-size="9" fill="#374151">$189.00</text>
+    
+    <!-- Row 4 -->
+    <line x1="50" y1="200" x2="450" y2="200" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="60" y="213" font-family="Arial, sans-serif" font-size="9" fill="#374151">Restaurant</text>
+    <text x="155" y="213" font-family="Arial, sans-serif" font-size="9" fill="#059669">Dining</text>
+    <text x="225" y="213" font-family="Arial, sans-serif" font-size="9" fill="#7c3aed">Vacation</text>
+    <text x="295" y="213" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">Family</text>
+    <text x="355" y="213" font-family="Arial, sans-serif" font-size="9" fill="#ea580c">Personal</text>
+    <text x="405" y="213" font-family="Arial, sans-serif" font-size="9" fill="#374151">$127.50</text>
+    
+    <!-- More rows indicator -->
+    <text x="220" y="233" font-family="Arial, sans-serif" font-size="9" fill="#9ca3af">...</text>
+    
+    <!-- Pivot table preview -->
+    <rect x="50" y="245" width="180" height="50" fill="#eff6ff" stroke="#2563eb" stroke-width="1" rx="4"/>
+    <text x="60" y="258" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#1e40af">Pivot: Purpose × Category</text>
+    <text x="60" y="272" font-family="Arial, sans-serif" font-size="8" fill="#374151">Commute | Transport: $45</text>
+    <text x="60" y="283" font-family="Arial, sans-serif" font-size="8" fill="#374151">Vacation | Transport: $60</text>
+    <text x="60" y="294" font-family="Arial, sans-serif" font-size="8" fill="#374151">Vacation | Dining: $127.50</text>
+    
+    <!-- Success checkmarks -->
+    <circle cx="420" cy="260" r="18" fill="#10b981" filter="url(#glow)"/>
+    <path d="M 413 260 L 417 264 L 427 254" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <text x="265" y="270" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#10b981">Complete Analysis</text>
+    <text x="265" y="285" font-family="Arial, sans-serif" font-size="9" fill="#059669">All dimensions tracked</text>
+</svg>

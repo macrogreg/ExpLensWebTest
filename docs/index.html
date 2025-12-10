@@ -1,31 +1,320 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="title" content="ExpLens" />
-        <link href="ExpLens-Home.css" rel="stylesheet" type="text/css" />
-
-        <title>ExpLens</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ExpLens - Advanced Personal Finance Analysis</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="../public/icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../public/icons/favicon-16x16.png" />
+        <link rel="stylesheet" href="styles.css" />
     </head>
-
     <body>
-        <div id="wrapper">
-            <div id="content">
-                <h1 style="padding-top: 10px">ExpLens</h1>
+        <header>
+            <nav class="container">
+                <div class="nav-brand">
+                    <img src="../public/icons/favicon-96x96.png" alt="ExpLens Logo" class="logo" />
+                    <span class="brand-name">ExpLens</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#get-started">Get Started</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                <p>This is the Homepage for ExpLens.</p>
-                <p>We are working on an upcoming release. Come back soon.</p>
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container hero-content">
+                    <div class="hero-text">
+                        <h1>Analyze Your Finances Beyond Categories</h1>
+                        <p class="hero-subtitle">
+                            ExpLens brings your complete banking data into Excel with powerful multidimensional
+                            analysis. Track expenses by category, purpose, family member, tax deductions, and any
+                            dimension you need.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#get-started" class="btn btn-primary">Get Started Free</a>
+                            <a href="#features" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <img
+                            src="graphics/hero-dashboard-new.svg"
+                            alt="Financial Dashboard Visualization"
+                            class="hero-image"
+                        />
+                    </div>
+                </div>
+            </section>
 
-                <div class="top-line">[ <a href="#" title="Top of Page">ToP</a> ]</div>
+            <!-- Value Proposition -->
+            <section class="value-prop">
+                <div class="container">
+                    <h2>Why ExpLens?</h2>
+                    <div class="value-grid">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <img src="graphics/icon-dimensions.svg" alt="Multiple Dimensions" />
+                            </div>
+                            <h3>Multi-dimensional Analysis</h3>
+                            <p>
+                                Go beyond simple categories. Analyze by purpose, family member, tax deductions, credit
+                                card rewards, and unlimited custom dimensions.
+                            </p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <img src="graphics/icon-speed.svg" alt="Lightning Fast" />
+                            </div>
+                            <h3>Fast, Bidirectional Sync</h3>
+                            <p>
+                                Download years of transactions in seconds. Categorize in your spreadsheet and sync back
+                                to the cloud. Use multiple workbooks sharing the same data.
+                            </p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <img src="graphics/icon-bank-metadata.svg" alt="Banking Metadata" />
+                            </div>
+                            <h3>Rich Banking Metadata</h3>
+                            <p>
+                                Transactions come pre-categorized with merchant details and credit card points potential
+                                - automatically from your banking provider.
+                            </p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <img src="graphics/icon-opensource.svg" alt="Open Source Security" />
+                            </div>
+                            <h3>100% Private & Secure</h3>
+                            <p>
+                                ExpLens is fully open source, giving you complete visibility into how it handles your
+                                data. All data stays in your spreadsheet, and remains accessible even if you stop using
+                                ExpLens. No vendor lock-in.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <h2>Excel Add-In</h2>
+            <!-- The Problem -->
+            <section id="features" class="problem-solution">
+                <div class="container">
+                    <div class="solution-box">
+                        <h2>The ExpLens Solution</h2>
+                        <div class="solution-content">
+                            <div>
+                                <div class="solution-visual">
+                                    <img
+                                        src="graphics/solution-illustration.svg"
+                                        alt="ExpLens Multidimensional Analysis"
+                                    />
+                                </div>
+                                <div class="solution-visual" style="margin-top: 2rem">
+                                    <img
+                                        src="graphics/multidimensional-chart.svg"
+                                        alt="Multidimensional Analysis Chart Example"
+                                    />
+                                </div>
+                            </div>
+                            <div class="solution-text">
+                                <p>
+                                    ExpLens downloads your complete banking data into Excel, enabling truly flexible
+                                    analysis across unlimited dimensions.
+                                </p>
+                                <div class="solution-features">
+                                    <div class="solution-feature">
+                                        <h4>The Problem with Traditional Finance Software</h4>
+                                        <p>
+                                            Most apps only categorize by <em>what</em> you bought, leaving critical
+                                            questions unanswered: What was the purpose of the purchase? Which family
+                                            member? Small Business deduction? Categories in other apps lack structure
+                                            for pivot tables and comprehensive analysis of these dimensions.
+                                        </p>
+                                    </div>
+                                    <div class="solution-feature">
+                                        <h4>Unlimited Categories Made Easy</h4>
+                                        <p>
+                                            Categorize by as many independent dimensions as you want - typically only
+                                            available in professional software. ExpLens makes multi-dimensional analysis
+                                            simple and accessible for everybody.
+                                        </p>
+                                    </div>
+                                    <div class="solution-feature">
+                                        <h4>Automatic Rich Metadata</h4>
+                                        <p>
+                                            Transactions come with automatic pre-categorization, merchant details, and
+                                            credit card points potential - all provided by your banking provider without
+                                            manual entry.
+                                        </p>
+                                    </div>
+                                    <div class="solution-feature">
+                                        <h4>Excel Power</h4>
+                                        <p>
+                                            Use pivot tables, charts, formulas, and all Excel features you know to
+                                            create the analysis that matters to you.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <p>The preview is available <a href="./app/excel/index.html">here</a>.</p>
+            <!-- Pricing -->
+            <section id="pricing" class="pricing">
+                <div class="container">
+                    <h2>Pricing</h2>
+                    <div class="pricing-container">
+                        <h3>ExpLens</h3>
+                        <p>
+                            ExpLens itself is <strong>free to use</strong>. If you find it valuable, donations are
+                            welcome.
+                        </p>
 
-                <div class="top-line">[ <a href="#" title="Top of Page">ToP</a> ]</div>
+                        <h3>Lunch Money Data Access</h3>
+                        <p>
+                            ExpLens connects to your bank data through
+                            <a href="https://lunchmoney.app" target="_blank">Lunch Money</a>, which stores your
+                            financial information securely on their servers. Lunch Money requires a subscription:
+                        </p>
+                        <ul>
+                            <li><strong>Free trial available</strong> to test the service</li>
+                            <li>
+                                <strong>Pay-what-you-want pricing:</strong> Starting at $50/year or $10/month -
+                                <a href="https://lunchmoney.app/pricing" target="_blank">Learn more</a>
+                            </li>
+                            <li>Long-term sustainable pricing model that respects users</li>
+                        </ul>
+
+                        <div class="pricing-highlight">
+                            <p>
+                                <strong>Why two services?</strong> ExpLens provides advanced analysis tools, while Lunch
+                                Money handles secure bank connections and data storage. This separation keeps ExpLens
+                                focused on analysis while ensuring your banking data is managed by specialists.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources -->
+            <section id="get-started" class="resources">
+                <div class="container">
+                    <h2>Get Started</h2>
+                    <div class="resources-grid">
+                        <a href="install.html" class="resource-card">
+                            <h3>Installing ExpLens</h3>
+                            <p>
+                                Step-by-step guide to install the ExpLens Excel add-in and configure your first
+                                workbook.
+                            </p>
+                            <span class="resource-arrow">→</span>
+                        </a>
+                        <a href="connect-lunch-money.html" class="resource-card">
+                            <h3>Connecting to Lunch Money</h3>
+                            <p>
+                                Get your API token and connect ExpLens to your Lunch Money account for seamless data
+                                sync.
+                            </p>
+                            <span class="resource-arrow">→</span>
+                        </a>
+                        <a href="analysis-categories.html" class="resource-card">
+                            <h3>Mastering Multidimensional Analysis</h3>
+                            <p>
+                                Learn how ExpLens manages unlimited analysis dimensions and how to use that data for
+                                comprehensive financial insights.
+                            </p>
+                            <span class="resource-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <a href="index.html">
+                            <img src="../public/icons/favicon-64x64.png" alt="ExpLens Logo" class="footer-logo" />
+                        </a>
+                        <p class="footer-tagline">ExpLens: Advanced Personal Finance Analysis</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Product</h4>
+                            <ul>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#get-started">Get Started</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Manuals</h4>
+                            <ul>
+                                <li><a href="install.html">Installation Guide</a></li>
+                                <li><a href="connect-lunch-money.html">Connecting to Lunch Money</a></li>
+                                <li><a href="analysis-categories.html">Financial Analysis Guide</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="../LICENSE.md">License</a></li>
+                                <li>
+                                    <a href="https://lunchmoney.app" target="_blank"
+                                        >Lunch Money
+                                        <svg
+                                            style="
+                                                display: inline-block;
+                                                width: 0.75em;
+                                                height: 0.75em;
+                                                margin-left: 0.25em;
+                                                vertical-align: middle;
+                                            "
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M10.5 10.5H1.5V1.5H6V0H1.5C0.675 0 0 0.675 0 1.5V10.5C0 11.325 0.675 12 1.5 12H10.5C11.325 12 12 11.325 12 10.5V6H10.5V10.5ZM7.5 0V1.5H9.879L3.2445 8.1345L4.3065 9.1965L10.941 2.562V4.941H12.441V0H7.5Z"
+                                                fill="currentColor"
+                                            /></svg
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/macrogreg/ExpLens" target="_blank"
+                                        >ExpLens GitHub
+                                        <svg
+                                            style="
+                                                display: inline-block;
+                                                width: 0.75em;
+                                                height: 0.75em;
+                                                margin-left: 0.25em;
+                                                vertical-align: middle;
+                                            "
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M10.5 10.5H1.5V1.5H6V0H1.5C0.675 0 0 0.675 0 1.5V10.5C0 11.325 0.675 12 1.5 12H10.5C11.325 12 12 11.325 12 10.5V6H10.5V10.5ZM7.5 0V1.5H9.879L3.2445 8.1345L4.3065 9.1965L10.941 2.562V4.941H12.441V0H7.5Z"
+                                                fill="currentColor"
+                                            /></svg
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024-2025 ExpLens. Licensed under MIT and PolyForm Shield 1.0.0.</p>
+                </div>
             </div>
-            <!-- id="content" -->
-        </div>
-        <!-- id="wrapper" -->
+        </footer>
     </body>
 </html>
