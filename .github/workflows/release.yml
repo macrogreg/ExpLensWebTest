@@ -68,7 +68,7 @@ jobs:
               run: |
                   echo "Version: '${{ steps.version.outputs.version }}'"
 
-            - name: Deploy to version dir
+            - name: Release to version dir
               run: |
                   VERSION=${{ steps.version.outputs.version }}
                   # Create version directory
@@ -76,10 +76,10 @@ jobs:
                     rm -rf "docs/app/$VERSION"
                   fi
                   mkdir -p "docs/app/$VERSION/excel"
-                  # Copy dist/spa to docs/app/version
-                  cp -r dist/spa/* "docs/app/$VERSION/"
+                  # Copy dist/spa to docs/app/version/excel
+                  cp -r dist/spa/* "docs/app/$VERSION/excel/"
 
-            - name: Deploy to current dir
+            - name: Release to current dir
               run: |
                   # Update current
                   rm -rf "docs/app/current/excel"
@@ -100,7 +100,7 @@ jobs:
                   if git diff --staged --quiet; then
                     echo "No changes to commit"
                   else
-                    git commit -m "Deploy SPA files to GH pages (ver: ${{ steps.version.outputs.version }})"
-                    echo "Pushing to branch ${PUSH_BRANCH}"
+                    git commit -m "Release Single Page App files to GitHub pages (ver: ${{ steps.version.outputs.version }})"
+                    echo "Pushing to branch '${PUSH_BRANCH}'"
                     git push origin HEAD:"${PUSH_BRANCH}"
                   fi
