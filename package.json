@@ -9,8 +9,8 @@
     "license": "SEE LICENSE IN LICENSE.md",
     "scripts": {
         "lint": "eslint -c ./eslint.config.js \"./src*/**/*.{ts,js,cjs,mjs,vue}\"",
-        "format-apply": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
-        "format-check": "prettier --check \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
+        "format-apply": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\"",
+        "format-check": "prettier --check \"**/*.{js,ts,vue,scss,html,md,json}\"",
         "test": "echo \"No test specified\" && exit 0",
         "dev": "quasar dev",
         "build": "quasar build",
