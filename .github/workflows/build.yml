@@ -1,4 +1,4 @@
-name: CI
+name: Build
 
 on:
     push:
@@ -28,7 +28,16 @@ jobs:
                   node-version: "22"
                   cache: "npm"
             - run: npm ci
-            - run: npm run format-check
+            - run: |
+                  if npm run format-check; then
+                    echo "Format check passed"
+                  else
+                    echo "Prettier detected formatting errors."
+                    echo "Will re-run Prettier to fix the errors and then run a diff to see what they are."
+                    npm run format-apply
+                    git --no-pager diff --color
+                    exit 1
+                  fi
 
     build:
         runs-on: ubuntu-latest
