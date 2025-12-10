@@ -13,10 +13,27 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: Print branch and commit
+              env:
+                  REF_NAME: ${{ github.ref_name }}
+                  HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+                  DEFAULT_SHA: ${{ github.sha }}
+                  EVENT_SHA: ${{ github.event.workflow_run.head_commit.id }}
+                  EVENT_MSG: ${{ github.event.workflow_run.head_commit.message }}
+              run: |
+                  BRANCH="${HEAD_BRANCH:-$REF_NAME}"
+                  echo "branch=${BRANCH:-unset}"
+                  echo "sha=${EVENT_SHA:-$DEFAULT_SHA}"
+                  echo "msg=${EVENT_MSG:-event payload missing}"
+
             - name: Checkout code
               uses: actions/checkout@v4
               with:
                   token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Print commit info from repo
+              run: |
+                  git show -1 --pretty=format:'Commit SHA: %H%nCommit message: %B'
 
             - name: Setup Node.js
               uses: actions/setup-node@v4
