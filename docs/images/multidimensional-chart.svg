@@ -1,0 +1,139 @@
+<svg width="500" height="350" viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.5" />
+            <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.3" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="500" height="350" fill="url(#bg3)" rx="12"/>
+    
+    <!-- Chart Container -->
+    <rect x="25" y="25" width="465" height="300" rx="8" fill="white" stroke="#2563eb" stroke-width="2"/>
+    
+    <!-- Window-style header -->
+    <rect x="25" y="25" width="465" height="35" rx="8" fill="#2563eb"/>
+    <rect x="25" y="45" width="465" height="15" fill="#2563eb"/>
+    <text x="40" y="54" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Monthly Expenses by Category and Purpose</text>
+    
+    <!-- Chart Area Background -->
+    <rect x="65" y="75" width="355" height="185" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    
+    <!-- Grid Lines -->
+    <line x1="65" y1="120" x2="420" y2="120" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="65" y1="165" x2="420" y2="165" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="65" y1="210" x2="420" y2="210" stroke="#e5e7eb" stroke-width="1"/>
+    <line x1="65" y1="255" x2="420" y2="255" stroke="#e5e7eb" stroke-width="1"/>
+    
+    <!-- Y-axis labels (0-900, bottom to top) -->
+    <text x="60" y="264" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="end">$0</text>
+    <text x="60" y="214" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="end">$300</text>
+    <text x="60" y="169" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="end">$600</text>
+    <text x="60" y="124" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="end">$900</text>
+    
+    <!-- Y-axis -->
+    <line x1="65" y1="80" x2="65" y2="260" stroke="#2563eb" stroke-width="2"/>
+    
+    <!-- X-axis -->
+    <line x1="65" y1="260" x2="420" y2="260" stroke="#2563eb" stroke-width="2"/>
+    
+    <!-- X-axis month labels at TOP -->
+    <text x="113" y="70" font-family="Arial, sans-serif" font-size="11" fill="#000000" text-anchor="middle" font-weight="600">January</text>
+    <text x="195" y="70" font-family="Arial, sans-serif" font-size="11" fill="#000000" text-anchor="middle" font-weight="600">February</text>
+    <text x="277" y="70" font-family="Arial, sans-serif" font-size="11" fill="#000000" text-anchor="middle" font-weight="600">March</text>
+    <text x="359" y="70" font-family="Arial, sans-serif" font-size="11" fill="#000000" text-anchor="middle" font-weight="600">April</text>
+    
+    <!-- Month 1: January (Groceries ~850, Utilities ~200, Transport ~600) -->
+    <!-- Groceries ~850: 570 Home + 200 Business + 80 Vacations -->
+    <rect x="88" y="146" width="14" height="114" fill="#3b82f6"/>
+    <rect x="88" y="106" width="14" height="40" fill="#8b5cf6"/>
+    <rect x="88" y="90" width="14" height="16" fill="#06b6d4"/>
+    
+    <!-- Utilities ~200: 150 Home + 50 Business -->
+    <rect x="106" y="238" width="14" height="22" fill="#3b82f6"/>
+    <rect x="106" y="227" width="14" height="11" fill="#8b5cf6"/>
+    
+    <!-- Transport ~600: 400 Home + 150 Business + 50 Vacations -->
+    <rect x="124" y="180" width="14" height="80" fill="#3b82f6"/>
+    <rect x="124" y="147" width="14" height="33" fill="#8b5cf6"/>
+    <rect x="124" y="136" width="14" height="11" fill="#06b6d4"/>
+    
+    <!-- Month 2: February -->
+    <!-- Groceries ~880 -->
+    <rect x="170" y="141" width="14" height="119" fill="#3b82f6"/>
+    <rect x="170" y="101" width="14" height="40" fill="#8b5cf6"/>
+    <rect x="170" y="84" width="14" height="17" fill="#06b6d4"/>
+    
+    <!-- Utilities ~220: 170 Home + 50 Business -->
+    <rect x="188" y="226" width="14" height="34" fill="#3b82f6"/>
+    <rect x="188" y="215" width="14" height="11" fill="#8b5cf6"/>
+    
+    <!-- Transport ~580 -->
+    <rect x="206" y="183" width="14" height="77" fill="#3b82f6"/>
+    <rect x="206" y="150" width="14" height="33" fill="#8b5cf6"/>
+    <rect x="206" y="137" width="14" height="13" fill="#06b6d4"/>
+    
+    <!-- Month 3: March -->
+    <!-- Groceries ~900 -->
+    <rect x="252" y="140" width="14" height="120" fill="#3b82f6"/>
+    <rect x="252" y="100" width="14" height="40" fill="#8b5cf6"/>
+    <rect x="252" y="87" width="14" height="13" fill="#06b6d4"/>
+    
+    <!-- Utilities ~190: 140 Home + 50 Business -->
+    <rect x="270" y="232" width="14" height="28" fill="#3b82f6"/>
+    <rect x="270" y="221" width="14" height="11" fill="#8b5cf6"/>
+    
+    <!-- Transport ~620 -->
+    <rect x="288" y="178" width="14" height="82" fill="#3b82f6"/>
+    <rect x="288" y="145" width="14" height="33" fill="#8b5cf6"/>
+    <rect x="288" y="134" width="14" height="11" fill="#06b6d4"/>
+    
+    <!-- Month 4: April -->
+    <!-- Groceries ~870 -->
+    <rect x="334" y="143" width="14" height="117" fill="#3b82f6"/>
+    <rect x="334" y="103" width="14" height="40" fill="#8b5cf6"/>
+    <rect x="334" y="89" width="14" height="14" fill="#06b6d4"/>
+    
+    <!-- Utilities ~210: 160 Home + 50 Business -->
+    <rect x="352" y="228" width="14" height="32" fill="#3b82f6"/>
+    <rect x="352" y="217" width="14" height="11" fill="#8b5cf6"/>
+    
+    <!-- Transport ~590 -->
+    <rect x="370" y="181" width="14" height="79" fill="#3b82f6"/>
+    <rect x="370" y="148" width="14" height="33" fill="#8b5cf6"/>
+    <rect x="370" y="136" width="14" height="12" fill="#06b6d4"/>
+    
+    <!-- Category labels - rotated 270 degrees, top of letters facing left -->
+    <!-- January -->
+    <text x="95" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 95 310)">Groceries</text>
+    <text x="113" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 113 310)">Utilities</text>
+    <text x="131" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 131 310)">Transport</text>
+    <!-- February -->
+    <text x="177" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 177 310)">Groceries</text>
+    <text x="195" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 195 310)">Utilities</text>
+    <text x="213" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 213 310)">Transport</text>
+    <!-- March -->
+    <text x="259" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 259 310)">Groceries</text>
+    <text x="277" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 277 310)">Utilities</text>
+    <text x="295" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 295 310)">Transport</text>
+    <!-- April -->
+    <text x="341" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 341 310)">Groceries</text>
+    <text x="359" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 359 310)">Utilities</text>
+    <text x="377" y="310" font-family="Arial, sans-serif" font-size="9" fill="#000000" text-anchor="start" transform="rotate(270 377 310)">Transport</text>
+    
+    <!-- Legend Box -->
+    <rect x="395" y="95" width="80" height="110" fill="white" stroke="#2563eb" stroke-width="1" rx="4"/>
+    
+    <!-- Legend: Purpose -->
+    <text x="400" y="111" font-family="Arial, sans-serif" font-size="9" fill="#8b5cf6" font-weight="bold">Purpose:</text>
+    
+    <rect x="400" y="118" width="10" height="10" fill="#3b82f6" rx="2"/>
+    <text x="413" y="127" font-family="Arial, sans-serif" font-size="7.5" fill="#1e293b">Homemaking</text>
+    
+    <rect x="400" y="138" width="10" height="10" fill="#8b5cf6" rx="2"/>
+    <text x="413" y="147" font-family="Arial, sans-serif" font-size="8" fill="#1e293b">Business</text>
+    
+    <rect x="400" y="158" width="10" height="10" fill="#06b6d4" rx="2"/>
+    <text x="413" y="167" font-family="Arial, sans-serif" font-size="8" fill="#1e293b">Vacations</text>
+</svg>

@@ -1,0 +1,71 @@
+name: Build
+
+on:
+    push:
+        branches: [master, release]
+    pull_request:
+        branches: [master, release]
+    workflow_dispatch:
+
+jobs:
+    Lint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "22"
+                  cache: "npm"
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Run lint
+              run: npm run lint
+
+    Check-Format:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "22"
+                  cache: "npm"
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Check formatting and report required changes
+              run: |
+                  if npm run format-check; then
+                    echo "Format check passed"
+                  else
+                    echo "Prettier detected formatting errors."
+                    echo "Will re-run Prettier to fix the errors and then run a diff to see what they are."
+                    npm run format-apply
+                    git --no-pager diff --color
+                    exit 1
+                  fi
+
+    Build-SPA:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "22"
+                  cache: "npm"
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Build SPA
+              run: npm run build

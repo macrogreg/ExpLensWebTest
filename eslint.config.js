@@ -84,7 +84,7 @@ export default defineConfigWithVueTs(
         },
     },
 
-    {        
+    {
         languageOptions: {
             globals: {
                 ...globals.serviceworker,

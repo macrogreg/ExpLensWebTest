@@ -1,0 +1,40 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad-shield" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="grad-inner" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background Circle -->
+    <circle cx="40" cy="40" r="38" fill="url(#grad-shield)" opacity="0.08"/>
+    
+    <!-- Main Shield Shape - Centered and Artistic -->
+    <path d="M 40 12 L 58 20 L 58 38 Q 58 52 40 66 Q 22 52 22 38 L 22 20 Z" 
+          fill="url(#grad-inner)" 
+          stroke="url(#grad-shield)" 
+          stroke-width="2.5" 
+          stroke-linejoin="round"/>
+    
+    <!-- Inner Shield Detail -->
+    <path d="M 40 18 L 52 24 L 52 38 Q 52 48 40 58 Q 28 48 28 38 L 28 24 Z" 
+          fill="none" 
+          stroke="url(#grad-shield)" 
+          stroke-width="2" 
+          opacity="0.5"/>
+    
+    <!-- Checkmark in center -->
+    <path d="M 32 38 L 37 44 L 48 30" 
+          stroke="url(#grad-shield)" 
+          stroke-width="3" 
+          fill="none" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Top accent (crown/emblem detail) -->
+    <circle cx="40" cy="15" r="2.5" fill="url(#grad-shield)"/>
+</svg>

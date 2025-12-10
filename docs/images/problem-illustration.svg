@@ -1,0 +1,46 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fee2e2;stop-opacity:0.5" />
+            <stop offset="100%" style="stop-color:#fecaca;stop-opacity:0.3" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="500" height="350" fill="url(#bg1)" rx="12"/>
+    
+    <!-- Traditional Finance App Interface -->
+    <rect x="50" y="40" width="400" height="270" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    
+    <!-- App header -->
+    <rect x="50" y="40" width="400" height="45" rx="8" fill="#dc2626"/>
+    <rect x="50" y="65" width="400" height="20" fill="#dc2626"/>
+    <text x="70" y="70" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Traditional Finance App</text>
+    
+    <!-- Single dimension category list -->
+    <text x="70" y="115" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1f2937">Expenses by Category</text>
+    
+    <!-- Categories with single dimension only -->
+    <rect x="70" y="130" width="360" height="30" rx="4" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+    <text x="85" y="150" font-family="Arial, sans-serif" font-size="12" fill="#991b1b">🍔 Food & Dining</text>
+    <text x="350" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#991b1b">$3,200</text>
+    
+    <rect x="70" y="170" width="360" height="30" rx="4" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+    <text x="85" y="190" font-family="Arial, sans-serif" font-size="12" fill="#991b1b">🚗 Transportation</text>
+    <text x="350" y="190" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#991b1b">$2,600</text>
+    
+    <rect x="70" y="210" width="360" height="30" rx="4" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+    <text x="85" y="230" font-family="Arial, sans-serif" font-size="12" fill="#991b1b">🛍️ Shopping</text>
+    <text x="350" y="230" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#991b1b">$2,000</text>
+    
+    <!-- Question marks showing missing information -->
+    <circle cx="250" cy="270" r="25" fill="#dc2626" opacity="0.1"/>
+    <text x="238" y="280" font-family="Arial, sans-serif" font-size="32" fill="#dc2626" opacity="0.5">?</text>
+    
+    <text x="180" y="295" font-family="Arial, sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">But WHO spent it?</text>
+    <text x="320" y="295" font-family="Arial, sans-serif" font-size="11" fill="#6b7280" text-anchor="middle">WHY was it spent?</text>
+    
+    <!-- Warning icon -->
+    <path d="M 380 270 L 395 295 L 365 295 Z" fill="#dc2626" opacity="0.7"/>
+    <text x="378" y="291" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">!</text>
+</svg>
