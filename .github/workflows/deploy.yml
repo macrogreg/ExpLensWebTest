@@ -36,13 +36,16 @@ jobs:
             - name: Build project
               run: npm run build
 
+            - name: Install jq
+              run: sudo apt-get update && sudo apt-get install -y jq
+
             - name: Get version
               id: version
               run: echo "version=$(jq -r .version package.json)" >> $GITHUB_OUTPUT
 
             - name: Print version
               run: |
-                  echo "Version: ${{ steps.version.outputs.version }}"
+                  echo "Version: '${{ steps.version.outputs.version }}'"
 
             - name: Deploy to version dir
               run: |
@@ -59,7 +62,7 @@ jobs:
               run: |
                   # Update current
                   rm -rf "docs/app/current/excel"
-                  mkdir -p "docs/app/current"
+                  mkdir -p "docs/app/current/excel"
                   cp -r dist/spa/* "docs/app/current/excel/"
 
             - name: Commit and push changes
